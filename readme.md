@@ -56,3 +56,7 @@
     * http://laravelacademy.org/post/3761.html 
     
 * Intervention Image -- http://laravelacademy.org/post/3585.html
+
+* laravel-permission -- https://github.com/spatie/laravel-permission
+
+* laravel-cors -- https://github.com/barryvdh/laravel-cors
