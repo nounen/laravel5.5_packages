@@ -66,6 +66,58 @@
 					"response": []
 				},
 				{
+					"name": "密码授权令牌刷新",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"description": "令牌刷新",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "def5020013e4fad903b109de36c9209241a465a2427b97fad1069d9b2967a7baaa95743fc9209688b06c0b89016c78bb5d437136e7e2a62c6af0558ba786faa1bda10c9fabdd710be30fc884f6fff71ea1000b6a3291cb040a2290fe0d84928bfdb0c3fdf61e0281704a3492605fd804f4725cd2a59b214d431755ec24323d3ac0d5bdc3353416063b55662376d9fdf78182169e988a4679241e3037bb8312fae42c08863f0d2492a67b690d94d474e7f9236257ebc1a33f7905dd4dda8b931da49ad442802c269954376406b55a50b6780698e2e41423d4e783427dfdbca5fa8b87e3567534e017a6c485dd3537c297600b89f39e46cd0748f1c2e254a541de010a0f204536fc12e2eb34026c18de723a164a1bbbb14769c3fa6eacff13b749cd17bcadeefd0d9c896f1d389017c9edd096df8a61a773eec821ae25e115269742c21794cbcb7b3194f5a41a62ff025ae266323f09c5ce15cb06704df48f766fffb22194",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "8K7w4uKaNzJcmtGO0dNKA0IS5I2K3AhjbEBy6ctU",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "*",
+									"description": "请求作用域，具体看文档",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://l5packages.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"l5packages",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "密码授权令牌token使用",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -75,7 +127,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBhZjI0OTYwYTcyNzAwNWY2NGFjNjkzNjNhNzIyYTU0YjRhNDM5YTgyOGUyODJmODg5ZmZhMjRhOWViMzFiNDk2Y2ZhYTY4ZDU3NDE3OWU4In0.eyJhdWQiOiIxIiwianRpIjoiMGFmMjQ5NjBhNzI3MDA1ZjY0YWM2OTM2M2E3MjJhNTRiNGE0MzlhODI4ZTI4MmY4ODlmZmEyNGE5ZWIzMWI0OTZjZmFhNjhkNTc0MTc5ZTgiLCJpYXQiOjE1NTEzMzQxOTEsIm5iZiI6MTU1MTMzNDE5MSwiZXhwIjoxNTgyODcwMTkxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.rWxs-vNGrJHmWW7QhDdqwFX7zsj5nHiAqUPkVQnTFa_ue5tpNB6nDW4_xC2FhRebH4GG_aHjZktVe5gxPucEgHDIlFvEUC7SwuyGmRcZtMk1fnrpmmbpYw6Lp4-dP4AC8jYbbxByHYt2lBtoXSjYNOmE6j56tICQeSvAfwl6_ZKi2X9BqbzlQ7SO1ZooORKBIrt218HpdBVzhpUT3piOLHqmb93xyH75toxiTeyaHVb1keSaNOF7HD5uWPmPyvOwZWsEpwm6IDjZxAryCSi81prfhtRJumDIK3vTkZXBpFCbjL2LaBzT_caY9A-e4uhyKwJXz5QybWCir34YMzYpnQRcFQPwkbqgVifHdwtlhXJJZnT6DqgPI223zdVluZNYRzlLvPhu9NMrn_FMPOCwkhws8FmwmokmZbK4111Cq3m9Umwa5fw1kPV2ivQYNcoohQxNFPOIo1Y4_Xct6rRJDHbf0Ywr56Q25RtiYqSnNkhLv5ArLxpRkE5P5KnARINvq7-6rbvjaznA2Y4xYTzSnDg0noDrc5bSORxSBiEuprDkIRhCelCDxxacu77TxCCBcFmf3pa2M26kh78KIiTjV06nGahPRMmPpGMsR7TA2xo_mGyHh3TTXItIcAmJDPjcYEYckqAgE5QaI8VH0FhIe6hRn7d2w_EDLaAtXVaEBzs",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE1ZmUyMmYyOWQ5N2I1ZTRhNjVlN2E2OWYyNGFjZTJiNDEwOGRhNWE4YjY4ZDJlZjUyNDM2YzU3OWI4MDYxNmM3NzRjNTYwZmFlOWEzMjNhIn0.eyJhdWQiOiIyIiwianRpIjoiYTVmZTIyZjI5ZDk3YjVlNGE2NWU3YTY5ZjI0YWNlMmI0MTA4ZGE1YThiNjhkMmVmNTI0MzZjNTc5YjgwNjE2Yzc3NGM1NjBmYWU5YTMyM2EiLCJpYXQiOjE1NTEzMzY3NjAsIm5iZiI6MTU1MTMzNjc2MCwiZXhwIjoxNTUyNjMyNzYwLCJzdWIiOiIxIiwic2NvcGVzIjpbIioiXX0.qhSvC6i3eibfiN9jyR4ohJROmtLGT1m76yN3dxUl6d3CWJPMrSPaoHUW43o8SYXwsBFOpoKNPUBt03OdVLdKv2dUjSBfdc_wAF2kdIWhbT0EKSeKxpXx2vAt7mdyC5TGCqE_wIog_pwBAA5qx0e2RKObnmJr0aiFImliawFtlTzo4rWmOdUO5dfW0mW7vCUoaIOQ_j69IYOAxa31jLznGPKoeVVn5dtzSnUZbV9SXOeIJELb4ABJnMkjq31uuaMYXOjO9-NYTM8b04FF65na_epF2KOlfr3dLmMkisP1qWDnR696SA6M0i1nIbN3j4pq94N-EIBI7K1YnG_dquOXTiZgl_rG4lQLon_T51Ik3pROPNk1LJpFJ9pP5HH3GZLG6GaQ7OR2h2pQggkEW5XPO2bBExi9af1W2K-lqFo_OXs0tAGxLbQGz8V7bS75efCUvZsY8b2tO41kajwBU2gPYHVaFPbIugn1Pn9mYWxaKQBzYg7g_iFYTdFBoaqrIc27k0dus7x19adfVO4S4geP9NuE1R-5e9ezltPfTtLAiOdBa_4XP_Mrvd6G2LKH0-z0ycGHEB6_nZQFXCsnl6u8wXJG2WYAif-7FC3RcrFGlpHNyFeuKOh_TOg__yMj0FJKJqioB3h7uQ4Iul2FIiF_Jzmc4i3GKSxdxeKMd4D4BV0",
 								"type": "text"
 							}
 						],
