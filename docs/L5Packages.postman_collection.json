@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "702b5593-39a8-4a48-aacd-d3ef3a56a82d",
+		"name": "L5Packages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "passport",
+			"item": [
+				{
+					"name": "密码授权令牌",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"description": "密码授权",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "8K7w4uKaNzJcmtGO0dNKA0IS5I2K3AhjbEBy6ctU",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@qq.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "*",
+									"description": "请求作用域，具体看文档",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://l5packages.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"l5packages",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "密码授权令牌token使用",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImM1ZjNjYjZjYTI4NjEzYjE0ZjZhN2IwODQ5ZWRkZDYyN2VhNjFiZDY3MzVhNjI4YmZjYzk3NmU4MmNiYzFiMzVmMGFlMzI0YjdlNThkOGQxIn0.eyJhdWQiOiIyIiwianRpIjoiYzVmM2NiNmNhMjg2MTNiMTRmNmE3YjA4NDllZGRkNjI3ZWE2MWJkNjczNWE2MjhiZmNjOTc2ZTgyY2JjMWIzNWYwYWUzMjRiN2U1OGQ4ZDEiLCJpYXQiOjE1NTEzMjU0NTUsIm5iZiI6MTU1MTMyNTQ1NSwiZXhwIjoxNTUyNjIxNDU0LCJzdWIiOiIxIiwic2NvcGVzIjpbIioiXX0.pO8m5pHilmXMDTdZjkNykiyzm1dlC25O7jMwJgeTk781X35aS3WbIDwhDzqol7jPKWAfrqAG3MS1MBbQUrYoTRCLCviNZVG8QdMWtNi6aPFlc7a3AHKMVudgTVZXRbdTxXT58BmA5Cna00POAunJBLv9RHLvYf1yvwVfz9vzlELC8Yay3W5FT1Q9IOr_lXtsIqCZkPnjCfLMgOf_QFjyglvp0bLhLCHe0IrWA6SsrMRjIVCvmSCtuztMuTz1iNHOK4sS_G9AVjeAiqGrS0sAeff0Znsp5O9IDYS5Qa51-dR27HOPtSnpjl7uKiTOv9NHX3Flc_IY5C7LBce7Nax4k_SEm6eQCkKEZF2s6ZIhxngxDyPTd2HZ5XlGAzShpy9FhhhRQ2tLfpv4GRpIHI2ye-zgdJXjFlUH73ZwXTwZB_D4vw6faipGMY68DWtEJDu_5oBEtM8GVjMgA8h3Ux1zmlsPuiyZo3xSGoLJB5BIBW0RbJoEcxGw1WJlDs6GjrvXGhlhJIQx5sJAzWkWEyhoJGIiH6PWcYJOq7mPnUMki68isvkcvwuiVWZfusRTrDEwrjlTWBnROP1l8o-rHRqoaWIMLagp3VcDkJq6DbcWp5tQJ8ZJQWHTmcPKIFIjYxhkfHfFQ8alubnrWwL-zO9LbuU351f6nNTGKNJq68OTV5Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "8K7w4uKaNzJcmtGO0dNKA0IS5I2K3AhjbEBy6ctU",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@qq.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://l5packages.test/passport/access_by_password_user",
+							"protocol": "http",
+							"host": [
+								"l5packages",
+								"test"
+							],
+							"path": [
+								"passport",
+								"access_by_password_user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

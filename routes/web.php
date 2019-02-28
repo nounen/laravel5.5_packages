@@ -45,3 +45,39 @@ Route::get('/laravel_debugbar', function () {
 
     return view('welcome');
 });
+
+
+// laravel-passport
+Route::get('/login', function() {
+    dd('登陆信息失效，此处应是登陆页面');
+})->name('login');
+
+
+// 密码授权令牌: 可用 postman 模拟
+Route::get('/passport/access_by_password', function() {
+    $http = new GuzzleHttp\Client;
+
+    $response = $http->post(url('oauth/token'), [
+        'form_params' => [
+            'grant_type' => 'password',
+            'client_id' => '2',
+            'client_secret' => '8K7w4uKaNzJcmtGO0dNKA0IS5I2K3AhjbEBy6ctU',
+            'username' => 'admin@qq.com',
+            'password' => 'admin',
+            'scope' => '',
+        ],
+    ]);
+
+    return json_decode((string) $response->getBody(), true);
+});
+
+// 密码授权令牌: 使用 token 验证用户信息
+Route::get('/passport/access_by_password_user', function() {
+    $user = \Illuminate\Support\Facades\Auth::user();
+
+    if (!is_null($user)) {
+        dd($user->toArray());
+    } else {
+        dd('无用户登陆信息');
+    }
+})->middleware('auth:api');
