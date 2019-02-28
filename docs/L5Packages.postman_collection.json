@@ -75,7 +75,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImM1ZjNjYjZjYTI4NjEzYjE0ZjZhN2IwODQ5ZWRkZDYyN2VhNjFiZDY3MzVhNjI4YmZjYzk3NmU4MmNiYzFiMzVmMGFlMzI0YjdlNThkOGQxIn0.eyJhdWQiOiIyIiwianRpIjoiYzVmM2NiNmNhMjg2MTNiMTRmNmE3YjA4NDllZGRkNjI3ZWE2MWJkNjczNWE2MjhiZmNjOTc2ZTgyY2JjMWIzNWYwYWUzMjRiN2U1OGQ4ZDEiLCJpYXQiOjE1NTEzMjU0NTUsIm5iZiI6MTU1MTMyNTQ1NSwiZXhwIjoxNTUyNjIxNDU0LCJzdWIiOiIxIiwic2NvcGVzIjpbIioiXX0.pO8m5pHilmXMDTdZjkNykiyzm1dlC25O7jMwJgeTk781X35aS3WbIDwhDzqol7jPKWAfrqAG3MS1MBbQUrYoTRCLCviNZVG8QdMWtNi6aPFlc7a3AHKMVudgTVZXRbdTxXT58BmA5Cna00POAunJBLv9RHLvYf1yvwVfz9vzlELC8Yay3W5FT1Q9IOr_lXtsIqCZkPnjCfLMgOf_QFjyglvp0bLhLCHe0IrWA6SsrMRjIVCvmSCtuztMuTz1iNHOK4sS_G9AVjeAiqGrS0sAeff0Znsp5O9IDYS5Qa51-dR27HOPtSnpjl7uKiTOv9NHX3Flc_IY5C7LBce7Nax4k_SEm6eQCkKEZF2s6ZIhxngxDyPTd2HZ5XlGAzShpy9FhhhRQ2tLfpv4GRpIHI2ye-zgdJXjFlUH73ZwXTwZB_D4vw6faipGMY68DWtEJDu_5oBEtM8GVjMgA8h3Ux1zmlsPuiyZo3xSGoLJB5BIBW0RbJoEcxGw1WJlDs6GjrvXGhlhJIQx5sJAzWkWEyhoJGIiH6PWcYJOq7mPnUMki68isvkcvwuiVWZfusRTrDEwrjlTWBnROP1l8o-rHRqoaWIMLagp3VcDkJq6DbcWp5tQJ8ZJQWHTmcPKIFIjYxhkfHfFQ8alubnrWwL-zO9LbuU351f6nNTGKNJq68OTV5Y",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBhZjI0OTYwYTcyNzAwNWY2NGFjNjkzNjNhNzIyYTU0YjRhNDM5YTgyOGUyODJmODg5ZmZhMjRhOWViMzFiNDk2Y2ZhYTY4ZDU3NDE3OWU4In0.eyJhdWQiOiIxIiwianRpIjoiMGFmMjQ5NjBhNzI3MDA1ZjY0YWM2OTM2M2E3MjJhNTRiNGE0MzlhODI4ZTI4MmY4ODlmZmEyNGE5ZWIzMWI0OTZjZmFhNjhkNTc0MTc5ZTgiLCJpYXQiOjE1NTEzMzQxOTEsIm5iZiI6MTU1MTMzNDE5MSwiZXhwIjoxNTgyODcwMTkxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.rWxs-vNGrJHmWW7QhDdqwFX7zsj5nHiAqUPkVQnTFa_ue5tpNB6nDW4_xC2FhRebH4GG_aHjZktVe5gxPucEgHDIlFvEUC7SwuyGmRcZtMk1fnrpmmbpYw6Lp4-dP4AC8jYbbxByHYt2lBtoXSjYNOmE6j56tICQeSvAfwl6_ZKi2X9BqbzlQ7SO1ZooORKBIrt218HpdBVzhpUT3piOLHqmb93xyH75toxiTeyaHVb1keSaNOF7HD5uWPmPyvOwZWsEpwm6IDjZxAryCSi81prfhtRJumDIK3vTkZXBpFCbjL2LaBzT_caY9A-e4uhyKwJXz5QybWCir34YMzYpnQRcFQPwkbqgVifHdwtlhXJJZnT6DqgPI223zdVluZNYRzlLvPhu9NMrn_FMPOCwkhws8FmwmokmZbK4111Cq3m9Umwa5fw1kPV2ivQYNcoohQxNFPOIo1Y4_Xct6rRJDHbf0Ywr56Q25RtiYqSnNkhLv5ArLxpRkE5P5KnARINvq7-6rbvjaznA2Y4xYTzSnDg0noDrc5bSORxSBiEuprDkIRhCelCDxxacu77TxCCBcFmf3pa2M26kh78KIiTjV06nGahPRMmPpGMsR7TA2xo_mGyHh3TTXItIcAmJDPjcYEYckqAgE5QaI8VH0FhIe6hRn7d2w_EDLaAtXVaEBzs",
 								"type": "text"
 							}
 						],
@@ -152,7 +152,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiZDRmMjUwOGFhYzg0Yzg4YzMyMzliNzAyNTBiMmNlZGZjZjU2ZGEyNjdhMDIxZWU4NWUzY2ViNmFmMTY1OGQ2MDc3MWZkNzIzMjBiNDM0In0.eyJhdWQiOiIzIiwianRpIjoiZGJkNGYyNTA4YWFjODRjODhjMzIzOWI3MDI1MGIyY2VkZmNmNTZkYTI2N2EwMjFlZTg1ZTNjZWI2YWYxNjU4ZDYwNzcxZmQ3MjMyMGI0MzQiLCJpYXQiOjE1NTEzMzMxMTIsIm5iZiI6MTU1MTMzMzExMiwiZXhwIjoxNTUyNjI5MTExLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.GR_AIkj8XZPoyVQcgKoxPfx8Q7CNG8rMdlpbGKWGgEv42nwC0SsFw6A35crTPdlTjV0ghOdr_Q6Jg7A_PBv2idtR_XyVR9N9fqQE-bX6O1RXw80I5V4iLkOIRLoRkj-_7T3zbi8mycDuTSdIfmRgd816VLm8FpMz9PcqV5BTdtSRadpfm7PjIZyMTLPMP6VIjIlG0SuWG2nZt2J9w3Tv1E2hRxhOAPhTa2QinU5QFxqsxjquxY8Mss3NaJ3R-n-uwb8bYKI00Y257qMc8plp1Isr0n6IPQAFQNqCUXDNisdDb-5213gX7dwp0eQ8zCWtlkj221LKNIoUQzp8Kc3kBVBpny-EKzbGzkZsb4qc8PSjyHxu4YZlpQ6HWm3AarE4ezYteU2cTze4QCDPnFfqwImmGruDHPliJ4JnBdlhe0olyEQrhluHmF-oH9LlyNIQAWgvxbf2pfd3Bn6Fkwekg73MKC_tOmEUa-z59MyDmBx-jXboU9FwQSraFNC3EUG0c8i9GlKySkrY-w8cfnFBqmEYniWHE3tqBnSdnmcnu9lDC8_6M6UWKJqz9tI293I45CeqKIuYt49PYJAz_Ml8kFuV0CEryFP8wT2IvxYyQ45qZfqN4AmRZnV523LI9PLruxjRhqP7WxJTMuLkIe34gMIVIc3_3lzdXwEJICiGOLA",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhjYTc4ZTUxYTc0MzE1M2MzNTFmNTg3MGRlN2ZhODlkY2E5N2ZkN2VjNzI5NmEzNTA2NmM0NjI1Mjg1NDc4ZGI3MDA1NjE5NjhhYjU1YmZjIn0.eyJhdWQiOiIyIiwianRpIjoiOGNhNzhlNTFhNzQzMTUzYzM1MWY1ODcwZGU3ZmE4OWRjYTk3ZmQ3ZWM3Mjk2YTM1MDY2YzQ2MjUyODU0NzhkYjcwMDU2MTk2OGFiNTViZmMiLCJpYXQiOjE1NTEzMzM0MDgsIm5iZiI6MTU1MTMzMzQwOCwiZXhwIjoxNTUyNjI5NDA3LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.PVmUStk9ua-pm54Bm2c4oHjSUkNwrqEzSNZFGizd_uUiog6s9lCRP70hsQNvW7s35EINSbz9qGu6dcJSEvag9opVTKI7wP7KfXe3SmusuDAvMfjmptfwdH1k_339OvG2KZxYfmW9-bFJamfV9oZhfaIp7oED082nx-CAb4oGoFQAIT_ibFNgsYKbQki7pfu2gOQdzJrrSShEhu-FmvlkO_0tNhkcMOHc0IcID7FgYynAAmTJoyKOvOVeo4k_LG0uaGtq9yuV6-N_Az35tG0jio7pWIJOK79aObnuEC6vMV72ICCZVFzFXbFcRYNg9HEJUnGRbgb38xEH52oszXYFHSY9eHA1T-4hS7N3cV6mM54uKMVSmpwzr1zwXAsaSAJ3d1FomnqyI_93zcHoxWy8aFmLelnP69okDS1s7dAeh89Apwj5RrJyXaFSyFLxAxKysVxliurNI0gSgs0Sccbu47uQEYbYPJKMTiksNEgKaoTFodsDL71utb56Nq-8W78UNAMBYHjbOxZxE1y98hPV-8QAp_5N7l-uDb_bwJktfluj0Kt2TJbD8Z_e5Bf8lprZmaTIYZgrgXtbJQ3DePA32YiFli4WWu5Z5P7YnPMYEp6oGwsuY_Pyrw7uAWMYMow52he7Ut923LwQ5s3EsIbeZ0GwoQmnGuDxpkMQtWkLFg4",
 								"type": "text"
 							}
 						],
@@ -167,6 +167,36 @@
 							"path": [
 								"passport",
 								"access_by_client_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "个人访问令牌token使用",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBiYTMxMTA1Zjc1ODE2OGYyYmU4ZDVjZTI4NTczYWUxMjMzOWMxNjdmMmIyMjM4ZDIzMjdmZWZhMDcxZDEwMGMyZTFlZGIxNzNhZjExNzJlIn0.eyJhdWQiOiIxIiwianRpIjoiMGJhMzExMDVmNzU4MTY4ZjJiZThkNWNlMjg1NzNhZTEyMzM5YzE2N2YyYjIyMzhkMjMyN2ZlZmEwNzFkMTAwYzJlMWVkYjE3M2FmMTE3MmUiLCJpYXQiOjE1NTEzMzQ1NDksIm5iZiI6MTU1MTMzNDU0OSwiZXhwIjoxNTgyODcwNTQ5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gVWSxEBFn95psOOq1l5nd-dXjAs2NC_GjCg8KLgXg9iZUxVS6cY9BYwy59Ww8sEztgS5Tz7Tinc-5cy0X5cZTI1VN-sgzOTtjHFgVH6MnXvD2fs7UqVIAurqB2v6aMEUJJBH7Jg4EgM5Izo6J36Guz-Hvi-ee0gjcBJas9feFiVFqeBTtTcjdGwlEIxRybIIG0NrDP-Decw__KulbaUxfZA6e6wAg0jui3K58CWOVCnk2eavqmuOB43gdVdTKmTuUZCb93Zcx4D0IsWeep3lxAqxrq-E9V2iv1yB6B_Q3-1Vbgz9um1jHm4CdOGo3z_1r2csUa7GqL0GWKOqNydaZGLgJXLKAUlQHfmCFodoKbxasi0HZxCtFSCE4AXLTblhzrQ-1HHBbrgrtoe0zLa_NMdUzzOUDcPLR9wVK6SGTtduHjZu2S9qI3rvBQgHXwJMZM_Zx7l5nD898WJULFbA_h33uqT8oMLoy6yM0czOlO5QS4UfzGcJ2_1xq42TtLbIYOowy0LkiA9pb6e-Qs0PnQoj-UzMWZ8uZFXWoYa4WzLwFPU-E8WAbwQFBYFyZBAUkUyq1qr9DgEQvM3xfStfXHsU04jXdlyXhQ1X8m7iDu6pYhfNo2L6jFt_lF7QOI5YY3WnYnPjx4TsrrG7dnsWCVY3FRWHkNg68sxz8XyBzvU"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://l5packages.test/passport/access_by_personal_user",
+							"protocol": "http",
+							"host": [
+								"l5packages",
+								"test"
+							],
+							"path": [
+								"passport",
+								"access_by_personal_user"
 							]
 						}
 					},

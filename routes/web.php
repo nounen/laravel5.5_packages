@@ -109,3 +109,24 @@ Route::get('/passport/access_by_client_user', function() {
         dd('已授权，但无用户登陆信息: TODO: 适合需要验证但是不关心用户信息的业务？');
     }
 })->middleware('client');
+
+
+// 个人访问令牌： 创建 token
+Route::get('/passport/access_by_personal', function() {
+    $user = \App\User::where('name', 'admin')->first();
+
+    $token = $user->createToken('token')->accessToken;
+
+    dd($token);
+});
+
+// 个人访问令牌: 使用 token 验证用户信息
+Route::get('/passport/access_by_personal_user', function() {
+    $user = \Illuminate\Support\Facades\Auth::user();
+
+    if (!is_null($user)) {
+        dd($user->toArray());
+    } else {
+        dd('无用户登陆信息');
+    }
+})->middleware('auth:api');
