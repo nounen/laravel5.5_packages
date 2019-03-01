@@ -19,3 +19,6 @@
  */
 
 Encore\Admin\Form::forget(['map', 'editor']);
+
+// 载入自定义 js 文件
+Encore\Admin\Admin::js('js/admin/sidebar-keep.js');
