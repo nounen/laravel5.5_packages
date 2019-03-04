@@ -88,7 +88,12 @@ class UserController extends Controller
         });
         $grid->name('用户名');
         $grid->email('邮箱');
-        $grid->password('密码');
+
+        // User 的 一对一 关联模型 Profile 列表查看
+        $grid->column('profile.age', '年龄');
+        $grid->column('profile.gender_name', '性别');
+
+//        $grid->password('密码');
 //        $grid->remember_token('Remember token');
         $grid->created_at('创建时间');
         $grid->updated_at('更新时间');
