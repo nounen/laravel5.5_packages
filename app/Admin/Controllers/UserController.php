@@ -25,7 +25,7 @@ class UserController extends Controller
         return $content
             ->header('Index')
             ->description('description')
-            ->body($this->grid());
+            ->body($this->indexGrid());
     }
 
     /**
@@ -77,17 +77,59 @@ class UserController extends Controller
      *
      * @return Grid
      */
-    protected function grid()
+    protected function indexGrid()
     {
         $grid = new Grid(new User);
 
-        $grid->id('Id');
-        $grid->name('Name');
-        $grid->email('Email');
-        $grid->password('Password');
-        $grid->remember_token('Remember token');
-        $grid->created_at('Created at');
-        $grid->updated_at('Updated at');
+        // 第一列显示 Id 字段，并将这一列设置为可排序列
+        // 通过 display($callback) 方法扩展这一列的显示内容
+        $grid->id('Id')->sortable()->display(function ($id) {
+            return "ID:{$id}";
+        });
+        $grid->name('用户名');
+        $grid->email('邮箱');
+        $grid->password('密码');
+//        $grid->remember_token('Remember token');
+        $grid->created_at('创建时间');
+        $grid->updated_at('更新时间');
+
+        // 添加不存在的字段
+        $grid->no_exist('不存在字段')->display(function () {
+            return '不存在字段...';
+        });
+
+        // 默认倒序
+        $grid->model()->orderBy('id', 'desc');
+
+        // filter($callback) 方法用来设置表格的简单搜索框
+        $grid->filter(function ($filter) {
+            // 设置created_at字段的范围查询
+            $filter->between('created_at', '注册时间')->datetime();
+        });
+
+        // 每页条数
+        $grid->paginate(3);
+
+        // 设置分页选择器选项
+        $grid->perPages([3, 5, 7, 10]);
+
+        // 禁用创建按钮
+//        $grid->disableCreateButton();
+
+        // 禁用分页条
+//        $grid->disablePagination();
+
+        // 禁用查询过滤器
+//        $grid->disableFilter();
+
+        // 禁用导出数据按钮
+//        $grid->disableExport();
+
+        // 禁用行选择checkbox
+//        $grid->disableRowSelector();
+
+        // 禁用行操作列. TODO: 如何自定义列操作？
+//        $grid->disableActions();
 
         return $grid;
     }
