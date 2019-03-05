@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Profile;
 use App\User;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\HasResourceActions;
@@ -169,10 +170,32 @@ class UserController extends Controller
     {
         $form = new Form(new User);
 
-        $form->text('name', 'Name');
-        $form->email('email', 'Email');
-        $form->password('password', 'Password');
-        $form->text('remember_token', 'Remember token');
+        $form->text('name', '名字');
+        $form->email('email', '邮箱');
+
+        $form->password('password', '密码')
+            ->rules([
+            'required',
+            'min:6',
+        ]);
+
+        // 电话号码输入框 && 表单验证
+        $form->mobile('profile.phone', '手机')
+            ->rules([
+                'required',
+            ]);
+
+        // 字输入框
+        $form->number('profile.age', '年龄')
+            ->min(1)
+            ->max(120);
+
+        // 下拉选择框 && 表单验证
+        $form->select('profile.gender', '性别')
+            ->options(Profile::GENDER_OPTIONS)
+            ->rules([
+                'required',
+            ]);
 
         return $form;
     }

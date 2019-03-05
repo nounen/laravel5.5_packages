@@ -19,14 +19,8 @@ class Profile extends Model
     const GENDER_FEMALE_NAME = '女';
 
     const GENDER_OPTIONS = [
-        [
-            'value' => self::GENDER_MALE,
-            'name' => self::GENDER_MALE_NAME,
-        ],
-        [
-            'value' => self::GENDER_FEMALE,
-            'name' => self::GENDER_FEMALE_NAME,
-        ],
+        self::GENDER_MALE => self::GENDER_MALE_NAME,
+        self::GENDER_FEMALE => self::GENDER_FEMALE_NAME,
     ];
 
     // 一对一： 所属的用户
@@ -38,6 +32,6 @@ class Profile extends Model
     // 性别 字典转名称
     public function getGenderNameAttribute()
     {
-        return getAttributeName(self::GENDER_OPTIONS, $this->gender);
+        return array_get(self::GENDER_OPTIONS, $this->gender);
     }
 }
