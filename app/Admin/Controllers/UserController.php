@@ -151,12 +151,12 @@ class UserController extends Controller
         $show = new Show(User::findOrFail($id));
 
         $show->id('Id');
-        $show->name('Name');
-        $show->email('Email');
-        $show->password('Password');
-        $show->remember_token('Remember token');
-        $show->created_at('Created at');
-        $show->updated_at('Updated at');
+        $show->name('用户名');
+        $show->email('邮箱');
+        $show->password('密码');
+        $show->remember_token('RememberToken');
+        $show->created_at('创建时间');
+        $show->updated_at('更新时间');
 
         return $show;
     }
@@ -196,6 +196,13 @@ class UserController extends Controller
             ->rules([
                 'required',
             ]);
+
+        // 表单保存前 saving.
+        $form->saving(function (Form $form) {
+            if ($form->password && $form->model()->password != $form->password) {
+                $form->password = bcrypt($form->password);
+            }
+        });
 
         return $form;
     }
