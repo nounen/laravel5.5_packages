@@ -162,6 +162,20 @@ class UserController extends Controller
         $show->profile()->age('年龄');
         $show->profile()->gender_name('性别');
 
+        // 一对多: 关联显示用户创建的文章
+        $show->posts('文章', function ($posts) {
+            $posts->resource('/admin/posts');
+
+            $posts->id('文章Id');
+            $posts->title('标题')->limit(10);
+            $posts->created_at('创建时间');
+            $posts->updated_at('更新时间');
+
+            $posts->filter(function ($filter) {
+                $filter->like('content');
+            });
+        });
+
         return $show;
     }
 
