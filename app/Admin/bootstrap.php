@@ -22,3 +22,6 @@ Encore\Admin\Form::forget(['map', 'editor']);
 
 // 载入自定义 js 文件
 Encore\Admin\Admin::js('js/admin/sidebar-keep.js');
+
+// 扩展组件: wang-editor
+Encore\Admin\Form::extend('editor', App\Admin\Extensions\WangEditor::class);

@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('title');
-            $table->text('content');
+            $table->longText('content');
             $table->string('cover_url');
             $table->timestamps();
         });

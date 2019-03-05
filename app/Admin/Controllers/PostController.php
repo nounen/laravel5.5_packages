@@ -86,10 +86,21 @@ class PostController extends Controller
         $grid->id('Id');
         $grid->user_id('作者');
         $grid->title('标题');
-        $grid->content('内容');
+//        $grid->content('内容');
         $grid->cover_url('封面');
-        $grid->created_at('Created at');
-        $grid->updated_at('Updated at');
+        $grid->created_at('创建时间');
+        $grid->updated_at('修改时间');
+
+        // 查询过滤
+        $grid->filter(function($filter) {
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            // 在这里添加字段过滤器
+            $filter->like('title', '标题');
+
+            $filter->between('created_at', '创建时间')->datetime();
+        });
 
         return $grid;
     }
@@ -109,8 +120,8 @@ class PostController extends Controller
         $show->title('标题');
         $show->content('内容');
         $show->cover_url('封面');
-        $show->created_at('Created at');
-        $show->updated_at('Updated at');
+        $show->created_at('创建时间');
+        $show->updated_at('修改时间');
 
         return $show;
     }
