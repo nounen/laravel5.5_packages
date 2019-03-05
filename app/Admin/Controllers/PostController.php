@@ -118,8 +118,13 @@ class PostController extends Controller
         $show->id('Id');
         $show->user_id('作者');
         $show->title('标题');
-        $show->content('内容');
-        $show->cover_url('封面');
+
+        // HTML 不转义
+        $show->content('内容')->unescape();
+
+        // 图片显示
+        $show->cover_url('封面')->image();
+
         $show->created_at('创建时间');
         $show->updated_at('修改时间');
 

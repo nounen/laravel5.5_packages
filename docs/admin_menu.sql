@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2019-03-01 10:00:19
+Date: 2019-03-05 16:00:13
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,7 +30,7 @@ CREATE TABLE `admin_menu` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of admin_menu
@@ -42,4 +42,5 @@ INSERT INTO `admin_menu` VALUES ('4', '2', '4', '角色管理', 'fa-user', 'auth
 INSERT INTO `admin_menu` VALUES ('5', '2', '5', '权限管理', 'fa-ban', 'auth/permissions', null, null, null);
 INSERT INTO `admin_menu` VALUES ('6', '2', '6', '菜单管理', 'fa-bars', 'auth/menu', null, null, null);
 INSERT INTO `admin_menu` VALUES ('7', '2', '7', '操作日志', 'fa-history', 'auth/logs', null, null, null);
-INSERT INTO `admin_menu` VALUES ('8', '0', '0', '用户管理', 'fa-user', 'users', null, '2019-03-01 01:25:24', '2019-03-01 01:27:19');
+INSERT INTO `admin_menu` VALUES ('8', '0', '8', '用户管理', 'fa-user', 'users', null, '2019-03-01 01:25:24', '2019-03-01 06:38:22');
+INSERT INTO `admin_menu` VALUES ('9', '0', '0', '文章管理', 'fa-file-word-o', 'posts', null, '2019-03-05 02:47:49', '2019-03-05 02:47:49');
