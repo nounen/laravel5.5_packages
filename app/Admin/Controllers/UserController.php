@@ -90,8 +90,8 @@ class UserController extends Controller
         $grid->email('邮箱');
 
         // User 的 一对一 关联模型 Profile 列表查看
-        $grid->column('profile.age', '年龄');
-        $grid->column('profile.gender_name', '性别');
+        $grid->profile()->age('年龄');
+        $grid->profile()->gender_name('性别');
 
 //        $grid->password('密码');
 //        $grid->remember_token('Remember token');
