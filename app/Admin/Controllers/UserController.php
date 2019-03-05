@@ -148,7 +148,7 @@ class UserController extends Controller
      */
     protected function detail($id)
     {
-        $show = new Show(User::findOrFail($id));
+        $show = new Show(User::with('profile')->findOrFail($id));
 
         $show->id('Id');
         $show->name('用户名');
@@ -157,6 +157,10 @@ class UserController extends Controller
         $show->remember_token('RememberToken');
         $show->created_at('创建时间');
         $show->updated_at('更新时间');
+
+        // TODO: 如何显示预加载字段
+        $show->profile()->age('年龄');
+        $show->profile()->gender_name('性别');
 
         return $show;
     }
