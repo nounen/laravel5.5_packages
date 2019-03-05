@@ -12,17 +12,20 @@ class Profile extends Model
         'gender_name',
     ];
 
-    const GENDER_MALE = 1; // 男
-    const GENDER_FEMALE = 2; // 女
+    const GENDER_MALE = 1;
+    const GENDER_MALE_NAME = '男';
+
+    const GENDER_FEMALE = 2;
+    const GENDER_FEMALE_NAME = '女';
 
     const GENDER_OPTIONS = [
         [
-            'name' => '男',
             'value' => self::GENDER_MALE,
+            'name' => self::GENDER_MALE_NAME,
         ],
         [
-            'name' => '女',
             'value' => self::GENDER_FEMALE,
+            'name' => self::GENDER_FEMALE_NAME,
         ],
     ];
 
