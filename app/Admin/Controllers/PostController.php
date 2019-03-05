@@ -139,6 +139,11 @@ class PostController extends Controller
         $form->editor('content', '内容');
         $form->image('cover_url', '封面')->uniqueName();
 
+        // 添加开关操作
+        $form->switch('released', '发布？');
+        // 不需要保存的字段
+        $form->ignore(['released']);
+
         return $form;
     }
 }
