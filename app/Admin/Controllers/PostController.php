@@ -86,7 +86,10 @@ class PostController extends Controller
 
         $grid->id('Id');
         $grid->user()->name('作者');
-        $grid->title('标题');
+        $grid->title('标题')->display(function($title) {
+            return str_limit($title, 30, '...');
+        });
+
         $grid->cover_url('封面');
         $grid->created_at('创建时间');
         $grid->updated_at('修改时间');
