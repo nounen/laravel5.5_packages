@@ -42,6 +42,13 @@ return [
     */
 
     'disks' => [
+        // laravel-admin 本地上传配置
+        'admin' => [
+            'driver' => 'local',
+            'root' => public_path('uploads'),
+            'visibility' => 'public',
+            'url' => env('APP_URL').'/uploads',
+        ],
 
         'local' => [
             'driver' => 'local',
