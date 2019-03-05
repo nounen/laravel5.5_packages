@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Post;
 use App\Http\Controllers\Controller;
+use App\User;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -27,7 +28,7 @@ class PostController extends Controller
         return $content
             ->header('列表')
             ->description($this->description)
-            ->body($this->grid());
+            ->body($this->indexGrid());
     }
 
     /**
@@ -79,14 +80,13 @@ class PostController extends Controller
      *
      * @return Grid
      */
-    protected function grid()
+    protected function indexGrid()
     {
         $grid = new Grid(new Post);
 
         $grid->id('Id');
-        $grid->user_id('作者');
+        $grid->user()->name('作者');
         $grid->title('标题');
-//        $grid->content('内容');
         $grid->cover_url('封面');
         $grid->created_at('创建时间');
         $grid->updated_at('修改时间');
@@ -134,14 +134,10 @@ class PostController extends Controller
     protected function form()
     {
         $form = new Form(new Post);
-
-        $form->number('user_id', '作者');
+        $form->select('user_id', '作者')->options(User::getOptions());
         $form->text('title', '标题');
         $form->editor('content', '内容');
-
-        // 图片
-        $form->image('cover_url', '封面')
-            ->uniqueName();
+        $form->image('cover_url', '封面')->uniqueName();
 
         return $form;
     }

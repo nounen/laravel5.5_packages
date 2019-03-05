@@ -42,4 +42,15 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class, 'user_id', 'id');
     }
+
+    /**
+     * 用户列表作为 Form 下拉选择数据
+     * @return mixed
+     */
+    public static function getOptions()
+    {
+        $users = User::pluck('name', 'id')->toArray();
+
+        return $users;
+    }
 }
